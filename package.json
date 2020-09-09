@@ -1,5 +1,5 @@
 {
-  "name": "Chatty-Beta",
+  "name": "chatty-beta",
   "version": "1.0.0",
   "description": "Creating a messaging application.",
   "main": "src/javascripts/main.js",

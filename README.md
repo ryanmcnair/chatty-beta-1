@@ -140,4 +140,8 @@ const users = [
 1. Again, this will change the structure of your data file.
 
 ### Need inspiration?
+<<<<<<< HEAD
 [Dr. T's Cohort 21 Chatty Group Project](https://drteresavasquez.github.io/d21-group-chatty-justice_league/#)
+=======
+[Dr. T's Cohort 21 Chatty Group Project](https://drteresavasquez.github.io/d21-group-chatty-justice_league/#)
+>>>>>>> b7bf5961a4ba34581c0a728641b7286d870d73ee
