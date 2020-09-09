@@ -1,7 +1,7 @@
 {
-  "name": "webpack-intro",
+  "name": "Chatty-Beta",
   "version": "1.0.0",
-  "description": "",
+  "description": "Creating a messaging application.",
   "main": "src/javascripts/main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
