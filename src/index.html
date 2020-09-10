@@ -10,11 +10,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand ml-2 mr-5 my-2" href="#">SnoopyChat</a>
       <form class="form-inline">
-        <input class="form-control-lg mr-sm-2 message--input" type="text" placeholder="Message">
+        <input class="form-control-lg mr-sm-2 message--input" id="message-input" type="text" placeholder="Message">
       </form>
-        <button class="btn btn-outline-success btn-lg  mx-4 my-2 my-sm-0" type="submit">Send</button>
+        <button class="btn btn-outline-success btn-lg  mx-4 my-2 my-sm-0" type="submit" id="send">Send</button>
         <button class="btn btn-outline-danger btn-lg mx-3 my-2 my-sm-0" type="submit">Clear</button>
     </nav>
+  </div>
+  <div class="container text-center">
+    <div class="error" id="error"></div>
   </div>
   <div class="container">
     <div class="row">

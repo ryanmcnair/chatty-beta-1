@@ -10,12 +10,16 @@ const displayMessage = (obj) => {
       ${obj.message}
     </div>
   </li>`;
-
   $('#messages-list').append(domString);
 };
 
+const clearDom = () => {
+  $('#messages-list').html('');
+};
+
 const printMessages = () => {
-  Data.messageArray.forEach(displayMessage);
+  clearDom();
+  Data.getMessages().forEach(displayMessage);
 };
 
 export default { printMessages };

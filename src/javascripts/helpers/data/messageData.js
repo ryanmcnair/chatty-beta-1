@@ -24,7 +24,8 @@ const messageArray = [
     user: 'Schroeder',
     message: 'Christmastime Is Here? But it\'s September!'
   }
-
 ];
 
-export default { messageArray };
+const getMessages = () => messageArray;
+
+export default { getMessages };
