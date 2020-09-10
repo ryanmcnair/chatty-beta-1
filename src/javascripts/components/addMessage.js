@@ -6,7 +6,7 @@ const messageAction = () => {
     $('#error').html('<p>Please enter a message</p>');
   } else {
     const newMessage = {
-      id: 'message6',
+      id: `message${Data.getMessages().length + 1}`,
       user: 'Woodstock',
       message: $('#message-input').val(),
     };
