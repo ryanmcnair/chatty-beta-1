@@ -2,11 +2,13 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
+  background-color: white;
+  color: black;
 }
 
 .message--input {
   width: 75vw;
 }
+
+//COMPONENTS
+@import './components/';

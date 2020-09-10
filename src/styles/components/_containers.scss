@@ -1,0 +1,19 @@
+%container {
+  border-radius: 0.5rem;
+  margin: 10px;
+  padding: 30px;
+  background-color: #F7E678;
+}
+
+#settings-container {
+  @extend %container;
+  width: 20%;
+}
+
+#messages-container {
+  @extend %container;
+}
+
+.container {
+  margin-top: 100px;
+}
