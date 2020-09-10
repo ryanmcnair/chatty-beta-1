@@ -12,13 +12,17 @@ const displayMessage = (obj) => {
       <button type="button" class="close" id="delete${obj.id}"><span>&times;</span></button>
     </div>
   </li>`;
-
   $('#messages-list').append(domString);
   $(`#delete${obj.id}`).on('click', Delete.removeMessage);
 };
 
+const clearDom = () => {
+  $('#messages-list').html('');
+};
+
 const printMessages = () => {
-  Data.messageArray.forEach(displayMessage);
+  clearDom();
+  Data.getMessages().forEach(displayMessage);
 };
 
 export default { printMessages };
