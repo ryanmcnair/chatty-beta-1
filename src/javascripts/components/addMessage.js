@@ -11,9 +11,9 @@ const messageAction = () => {
       message: $('#message-input').val(),
     };
     Data.getMessages().push(newMessage);
-    Print.printMessages();
     $('#message-input').val('');
     $('#error').html('');
+    Print.printMessages();
   }
 };
 
