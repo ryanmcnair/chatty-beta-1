@@ -1,8 +1,14 @@
 import '../styles/main.scss';
+import Display from './components/displayMessages';
+import Button from './components/buttonActions';
+import Message from './components/addMessage';
+import Users from './components/multipleUsers';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+  Message.addMessage();
+  Button.clearButton();
+  Display.printMessages();
+  Users.userSelection();
 };
 
 init();
