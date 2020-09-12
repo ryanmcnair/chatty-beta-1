@@ -23,7 +23,10 @@ const clearDom = () => {
 
 const printMessages = () => {
   clearDom();
-  Data.getMessages().forEach(displayMessage);
+  for (let i = Data.getMessages().length - 1; i > Data.getMessages().length - 21; i -= 1) {
+    if (typeof Data.getMessages()[i] === 'undefined') break;
+    displayMessage(Data.getMessages()[i]);
+  }
 };
 
 export default { printMessages };

@@ -13,9 +13,9 @@ const messageAction = () => {
       timestamp: moment().format('MMMM Do YYYY, h:mm a')
     };
     Data.getMessages().push(newMessage);
-    Print.printMessages();
     $('#message-input').val('');
     $('#error').html('');
+    Print.printMessages();
   }
 };
 
