@@ -1,10 +1,6 @@
 const darkMode = () => {
   $('#darkMode').on('click', () => {
-    if ($('body').hasClass('dark-mode')) {
-      $('body').removeClass('dark-mode');
-    } else {
-      $('body').addClass('dark-mode');
-    }
+    document.body.classList.toggle('dark-mode');
   });
 };
 
