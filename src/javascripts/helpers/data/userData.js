@@ -8,28 +8,30 @@ const users = [
   {
     id: 'user1',
     image: `${Linus}`,
-    name: 'Linus',
+    user: 'Linus',
   },
   {
     id: 'user2',
     image: `${Peppermint}`,
-    name: 'Peppermint Patty',
+    user: 'Peppermint Patty',
   },
   {
     id: 'user3',
     image: `${Pig}`,
-    name: 'Pig-Pen',
+    user: 'Pig-Pen',
   },
   {
     id: 'user4',
     image: `${Marcie}`,
-    name: 'Marcie',
+    user: 'Marcie',
   },
   {
     id: 'user5',
     image: `${Franklin}`,
-    name: 'Franklin',
+    user: 'Franklin',
   },
 ];
 
-export default { users };
+const selectUsers = () => users;
+
+export default { selectUsers };
