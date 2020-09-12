@@ -33,6 +33,7 @@
     "@fortawesome/fontawesome-free": "5.14.0",
     "axios": "0.20.0",
     "bootstrap": "4.5.2",
+    "emojis": "^1.0.10",
     "jquery": "3.5.1",
     "moment": "^2.27.0",
     "popper.js": "1.16.1"

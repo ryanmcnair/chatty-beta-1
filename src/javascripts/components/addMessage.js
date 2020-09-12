@@ -1,4 +1,5 @@
 import moment from 'moment';
+import emojis from 'emojis';
 import Data from '../helpers/data/messageData';
 import Print from './displayMessages';
 
@@ -12,7 +13,7 @@ const messageAction = () => {
       id: `message${Data.getMessages().length + 1}`,
       user: `${radioSelection}`,
       image: `${imageSelection}`,
-      message: $('#message-input').val(),
+      message: emojis.unicode($('#message-input').val()),
       timestamp: moment().format('MMMM Do YYYY, h:mm a')
     };
     Data.getMessages().push(newMessage);
