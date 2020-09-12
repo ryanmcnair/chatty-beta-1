@@ -1,3 +1,4 @@
+import moment from 'moment';
 import Data from '../helpers/data/messageData';
 import Print from './displayMessages';
 
@@ -12,11 +13,12 @@ const messageAction = () => {
       user: `${radioSelection}`,
       image: `${imageSelection}`,
       message: $('#message-input').val(),
+      timestamp: moment().format('MMMM Do YYYY, h:mm a')
     };
     Data.getMessages().push(newMessage);
-    Print.printMessages();
     $('#message-input').val('');
     $('#error').html('');
+    Print.printMessages();
   }
 };
 
