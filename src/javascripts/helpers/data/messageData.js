@@ -43,6 +43,9 @@ const messageArray = [
   },
 ];
 
+const editing = false;
+const holding = {};
+
 const getMessages = () => messageArray;
 
-export default { getMessages };
+export default { getMessages, editing, holding };
