@@ -36,13 +36,14 @@ const messageAction = () => {
       Message.editing = false;
     }
     for (let i = 0; i < Bot.bots.length; i += 1) {
+      const lowerCaseMessageValue = messageValue.toLowerCase();
       if (
-        messageValue.includes(
-          Bot.bots[i].respondTo.find((word) => messageValue.includes(word))
+        lowerCaseMessageValue.includes(
+          Bot.bots[i].respondTo.find((word) => lowerCaseMessageValue.includes(word))
         )
       ) {
         const botMessage = {
-          id: `message${Message.getMessages().length + 1}`,
+          id: `message${Message.getMessages().length + 1 + i}`,
           user: `${Bot.bots[i].user}`,
           image: `${Bot.bots[i].image}`,
           message: `${
