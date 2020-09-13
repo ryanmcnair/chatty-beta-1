@@ -43,7 +43,7 @@ const messageAction = () => {
         )
       ) {
         const botMessage = {
-          id: `message${Message.getMessages().length + 1}`,
+          id: `message${Message.getMessages().length + 1 + i}`,
           user: `${Bot.bots[i].user}`,
           image: `${Bot.bots[i].image}`,
           message: `${
