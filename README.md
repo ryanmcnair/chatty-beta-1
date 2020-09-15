@@ -24,9 +24,9 @@ A fun chat application based on the Peanuts comic strip.
 
 ## Code Example
 
-This code iterates through the array for chat bots and prints their responses after a random time based on key words.
+The code example below iterates through the array for chat bots and prints their responses after a random time based on key words.
 
-```js
+```javascript
 for (let i = 0; i < Bot.bots.length; i += 1) {
       const lowerCaseMessageValue = messageValue.toLowerCase();
       if (
@@ -60,7 +60,13 @@ for (let i = 0; i < Bot.bots.length; i += 1) {
 
 ## Screenshots
 
+![Chatty Input](http://www.giphy.com/gifs/hWv8rHqhD2k5QjIw9H)
+![Chatty Edit](http://www.giphy.com/gifs/W4zO9OMqZnwlVw61WJ)
+
+
 ## Link
+
+[See the site here](https://chatty-group-project.netlify.app/)
 
 ## Credits
 

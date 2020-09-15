@@ -6,7 +6,7 @@ const bots = [
   {
     user: 'Teacher',
     image: `${Teacher}`,
-    message: ['Good grief...', 'Whomp whomp', '*Stern gaze*'],
+    message: ['Wah wah woh wah wah', 'Whomp whomp', '*Stern gaze*'],
     respondTo: ['teacher', '?', 'curse words', 'holla', 'yo', 'hey', 'blah'],
   },
   {
