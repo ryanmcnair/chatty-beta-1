@@ -5,6 +5,8 @@ import Print from './displayMessages';
 import Bot from '../helpers/data/botData';
 
 const messageAction = () => {
+  const lastIndex = Message.getMessages().length - 1;
+  let idNumber = Message.getMessages().length === 0 ? 1 : Number(Message.getMessages()[lastIndex].id) + 1;
   const messageValue = $('#message-input').val();
   if (messageValue === '') {
     $('#error').html('<p>Please enter a message</p>');
@@ -17,7 +19,7 @@ const messageAction = () => {
         'input[name=character]:checked'
       ).id;
       const newMessage = {
-        id: `message${Message.getMessages().length + 1}`,
+        id: idNumber.toString(),
         user: `${radioSelection}`,
         image: `${imageSelection}`,
         message: emojis.unicode(messageValue),
@@ -43,7 +45,7 @@ const messageAction = () => {
         )
       ) {
         const botMessage = {
-          id: `message${Message.getMessages().length + 1 + i}`,
+          id: (idNumber + 1).toString(),
           user: `${Bot.bots[i].user}`,
           image: `${Bot.bots[i].image}`,
           message: `${
@@ -53,6 +55,7 @@ const messageAction = () => {
           }`,
           timestamp: moment().format('MMMM Do YYYY, h:mm a'),
         };
+        idNumber += 1;
         setTimeout(() => {
           Message.getMessages().push(botMessage);
           Print.printMessages();

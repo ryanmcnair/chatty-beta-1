@@ -16,14 +16,42 @@ A fun chat application based on the Peanuts comic strip.
 ## Tech Used
 
 -JQuery
+-Bootstrap
+-Webpack
 -JavaScript ES6
 -SASS
 -HTML
 
 ## Code Example
 
-```js
+This code iterates through the array for chat bots and prints their responses after a random time based on key words.
 
+```js
+for (let i = 0; i < Bot.bots.length; i += 1) {
+      const lowerCaseMessageValue = messageValue.toLowerCase();
+      if (
+        lowerCaseMessageValue.includes(
+          Bot.bots[i].respondTo.find((word) => lowerCaseMessageValue.includes(word))
+        )
+      ) {
+        const botMessage = {
+          id: (idNumber + 1).toString(),
+          user: `${Bot.bots[i].user}`,
+          image: `${Bot.bots[i].image}`,
+          message: `${
+            Bot.bots[i].message[
+              Math.floor(Math.random() * Bot.bots[i].message.length)
+            ]
+          }`,
+          timestamp: moment().format('MMMM Do YYYY, h:mm a'),
+        };
+        idNumber += 1;
+        setTimeout(() => {
+          Message.getMessages().push(botMessage);
+          Print.printMessages();
+        }, Math.floor(Math.random() * 10000) + 1000);
+      }
+    }
 ```
 
 ## Wireframe

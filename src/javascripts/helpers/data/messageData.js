@@ -6,28 +6,28 @@ import Schroeder from '../../../assets/images/Schroeder.jpg';
 
 const messageArray = [
   {
-    id: 'message1',
+    id: '1',
     user: 'Charlie Brown',
     image: `${Chuck}`,
     message: 'Good grief...',
     timestamp: 'October 2, 1950, 6:15 am',
   },
   {
-    id: 'message2',
+    id: '2',
     user: 'Snoopy',
     image: `${Snoopy}`,
     message: 'LOL',
     timestamp: 'October 4, 1950, 12:02 am',
   },
   {
-    id: 'message3',
+    id: '3',
     user: 'Schroeder',
     image: `${Schroeder}`,
     message: "Christmastime Is Here? But it's September!",
     timestamp: 'May 30, 1951, 8:48 pm',
   },
   {
-    id: 'message4',
+    id: '4',
     user: 'Lucy',
     image: `${Lucy}`,
     message:
@@ -35,7 +35,7 @@ const messageArray = [
     timestamp: 'March 3, 1952, 10:11 pm',
   },
   {
-    id: 'message5',
+    id: '5',
     user: 'Woodstock',
     image: `${Woodstock}`,
     message: '*Chittering noises*',
