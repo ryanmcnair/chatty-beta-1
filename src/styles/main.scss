@@ -1,18 +1,39 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@font-face { 
+  font-family: 'digistrip';
+  src: url(../assets/font/digistrip.ttf);
+}
 
 body {
-  background-color: white;
   color: black;
+  font-family: 'digistrip';
+  --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 15%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 15%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 15%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 15%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
 }
 
 .dark-mode {
-  background-color: black;
   color: white;
+  --stripe: #121619;
+  --bg: #27303A;
+
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 15%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 15%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 15%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 15%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
 }
 
 .message--input {
-  width: 75vw;
+  width: 70vw;
 }
 
 //COMPONENTS
