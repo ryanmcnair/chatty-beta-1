@@ -60,8 +60,8 @@ for (let i = 0; i < Bot.bots.length; i += 1) {
 
 ## Screenshots
 
-![Chatty Input](http://www.giphy.com/gifs/hWv8rHqhD2k5QjIw9H)
-![Chatty Edit](http://www.giphy.com/gifs/W4zO9OMqZnwlVw61WJ)
+![Chatty Input](https://media.giphy.com/media/hWv8rHqhD2k5QjIw9H/giphy.gif)
+![Chatty Edit](https://media.giphy.com/media/W4zO9OMqZnwlVw61WJ/giphy.gif)
 
 
 ## Link
